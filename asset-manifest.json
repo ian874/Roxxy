@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Roxxy/static/css/main.ef9ce87d.css",
-    "main.js": "/Roxxy/static/js/main.d282a462.js",
+    "main.css": "/Roxxy/static/css/main.e152d4bc.css",
+    "main.js": "/Roxxy/static/js/main.403c3d62.js",
     "static/media/RoxxyMotel.png": "/Roxxy/static/media/RoxxyMotel.ff22fc88cf9c5003a38d.png",
     "static/media/RoxxyRestaurant.jpg": "/Roxxy/static/media/RoxxyRestaurant.67fd7c3fba7b57969bfc.jpg",
     "static/media/Roxxy1.jpg": "/Roxxy/static/media/Roxxy1.b9944322fa96629f8c9f.jpg",
@@ -11,11 +11,11 @@
     "static/media/Roxxy2.jpg": "/Roxxy/static/media/Roxxy2.17dfdf66bee99efca7ce.jpg",
     "static/media/last.jpg": "/Roxxy/static/media/last.0cf381063b90eb166630.jpg",
     "index.html": "/Roxxy/index.html",
-    "main.ef9ce87d.css.map": "/Roxxy/static/css/main.ef9ce87d.css.map",
-    "main.d282a462.js.map": "/Roxxy/static/js/main.d282a462.js.map"
+    "main.e152d4bc.css.map": "/Roxxy/static/css/main.e152d4bc.css.map",
+    "main.403c3d62.js.map": "/Roxxy/static/js/main.403c3d62.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef9ce87d.css",
-    "static/js/main.d282a462.js"
+    "static/css/main.e152d4bc.css",
+    "static/js/main.403c3d62.js"
   ]
 }
