@@ -13,8 +13,9 @@ import Last1 from './assets/last1.jpg';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showComingSoon: false };
+    this.state = { showComingSoon: false, showMenu: false };
     this.handleLinkClick = this.handleLinkClick.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   handleLinkClick() {
@@ -22,11 +23,15 @@ class App extends React.Component {
     setTimeout(() => this.setState({ showComingSoon: false }), 2000);
   }
 
+  toggleMenu() {
+    this.setState(prevState => ({ showMenu: !prevState.showMenu }));
+  }
+
   render() {
     return React.createElement(
       'div',
       null,
-      React.createElement(Header, { onLinkClick: this.handleLinkClick }),
+      React.createElement(Header, { onLinkClick: this.handleLinkClick, toggleMenu: this.toggleMenu, showMenu: this.state.showMenu }),
       React.createElement(Hero, { backgroundImage: RoxxyMotelImage }),
       React.createElement(Offers, { images: [Roxxy1, Roxxy2, Roxxy3] }),
       React.createElement(About, { image: RoxxyRestaurant }),
@@ -50,8 +55,17 @@ class Header extends React.Component {
       'header',
       null,
       React.createElement(
+        'button',
+        { className: 'menu-toggle', onClick: this.props.toggleMenu },
+        React.createElement(
+          'span',
+          { className: 'hamburger' },
+          '☰'
+        )
+      ),
+      React.createElement(
         'nav',
-        null,
+        { className: this.props.showMenu ? 'active' : '' },
         React.createElement(
           'a',
           { onClick: this.props.onLinkClick, className: 'nav-active' },
@@ -147,7 +161,7 @@ const Hero = ({ backgroundImage }) =>
       React.createElement(
         'p',
         { className: 'hero-subtitle' },
-        'Unlock to enjoy the view of Martine'
+        'Bunyala Finest'
       )
     )
   );
